@@ -31,7 +31,7 @@ This project is a React-based dashboard for visualizing YouTube channel analytic
 - `src/App.jsx`: Main dashboard component containing analytics logic and UI.
 - `src/main.jsx`: Application entry point.
 - `src/index.css`: Global styles including Tailwind CSS setup.
-- `vite.config.js`: Vite configuration with React and Tailwind CSS v4 plugins.
+- `vite.config.js`: Vite configuration with React and Tailwind CSS v3 plugins.
 - `index.html`: Main HTML file.
 
 ## Features
@@ -40,4 +40,9 @@ This project is a React-based dashboard for visualizing YouTube channel analytic
 - **Interactive Metrics**: KPIs for total views, average views, and engagement rates.
 - **Visual Trends**: Charts showing views over time and top-performing content.
 - **Archive Search**: Search through the entire content history.
-- **Modern UI**: Clean, responsive design using Tailwind CSS v4.
+- **Modern UI**: Clean, responsive design using Tailwind CSS v3.
+
+## Resources & Learning
+
+- **Get your own YouTube Data**: If you want to learn how to get data from any YouTube channel easily, check out my [Free Walkthrough](https://www.uzomah.com/courses/lazy-data-engineering/introduction).
+- **Data Story**: See the end-to-end data story about **Data with Baraa** data I created last year: [YouTube Analytics Book](https://www.uzomah.com/book/youtube-analytics).
