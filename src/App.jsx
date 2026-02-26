@@ -366,15 +366,15 @@ Data with Baraa,305000,15603940,404,"How to Connect Tableau to Database,Text, Ex
                         </div>
                     </div>
 
-                    <div className="flex items-center gap-6 hidden sm:flex">
+                    <div className="flex items-center gap-3 sm:gap-6">
                         <div className="text-right">
-                            <p className="text-[11px] text-zinc-500 font-medium uppercase tracking-widest mb-0.5">Subscribers</p>
-                            <p className="text-sm font-medium text-zinc-200">{formatCompactNumber(channelInfo.subscribers)}</p>
+                            <p className="text-[9px] sm:text-[11px] text-zinc-500 font-medium uppercase tracking-widest mb-0.5 hidden xs:block">Subscribers</p>
+                            <p className="text-xs sm:text-sm font-medium text-zinc-200">{formatCompactNumber(channelInfo.subscribers)}</p>
                         </div>
-                        <div className="w-px h-8 bg-zinc-800"></div>
+                        <div className="w-px h-8 bg-zinc-800 hidden xs:block"></div>
                         <div className="text-right">
-                            <p className="text-[11px] text-zinc-500 font-medium uppercase tracking-widest mb-0.5">Total Views</p>
-                            <p className="text-sm font-medium text-zinc-200">{formatCompactNumber(channelInfo.totalViews)}</p>
+                            <p className="text-[9px] sm:text-[11px] text-zinc-500 font-medium uppercase tracking-widest mb-0.5 hidden xs:block">Total Views</p>
+                            <p className="text-xs sm:text-sm font-medium text-zinc-200">{formatCompactNumber(channelInfo.totalViews)}</p>
                         </div>
                     </div>
                 </div>

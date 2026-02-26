@@ -6,6 +6,9 @@ export default {
     ],
     theme: {
         extend: {
+            screens: {
+                'xs': '400px',
+            },
             colors: {
                 zinc: {
                     950: '#09090b',
