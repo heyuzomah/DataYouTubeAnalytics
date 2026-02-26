@@ -271,7 +271,7 @@ Data with Baraa,305000,15603940,404,"How to Connect Tableau to Database,Text, Ex
                         </div>
 
                         <h1 className="text-2xl font-light tracking-[0.2em] uppercase text-white mb-2 ml-[0.2em]">
-                            Baraa Hub
+                            Baraa Dashboard
                         </h1>
                         <p className="text-[11px] font-medium tracking-[0.3em] uppercase text-zinc-500 mb-12">
                             Intelligence & Insights
