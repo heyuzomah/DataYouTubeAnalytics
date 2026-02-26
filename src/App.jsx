@@ -380,7 +380,7 @@ Data with Baraa,305000,15603940,404,"How to Connect Tableau to Database,Text, Ex
                 </div>
             </header>
 
-            <main className="max-w-7xl mx-auto px-6 py-8 space-y-6">
+            <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8 space-y-4 sm:space-y-6">
 
                 {/* KPI Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -389,8 +389,8 @@ Data with Baraa,305000,15603940,404,"How to Connect Tableau to Database,Text, Ex
                             <BarChart3 className="w-24 h-24 text-blue-500 -mr-6 -mt-6 rotate-12" />
                         </div>
                         <div className="relative z-10">
-                            <p className="text-sm text-zinc-400 font-medium mb-1">Total Views</p>
-                            <p className="text-3xl font-medium tracking-tight text-white mb-4">
+                            <p className="text-xs sm:text-sm text-zinc-400 font-medium mb-1">Total Views</p>
+                            <p className="text-2xl sm:text-3xl font-medium tracking-tight text-white mb-3 sm:mb-4">
                                 {formatCompactNumber(kpis.totalViewsAnalyzed)}
                             </p>
                             <div className="flex items-center gap-2 text-xs font-medium">
@@ -406,8 +406,8 @@ Data with Baraa,305000,15603940,404,"How to Connect Tableau to Database,Text, Ex
                             <TrendingUp className="w-24 h-24 text-emerald-500 -mr-6 -mt-6 rotate-12" />
                         </div>
                         <div className="relative z-10">
-                            <p className="text-sm text-zinc-400 font-medium mb-1">Average Views / Video</p>
-                            <p className="text-3xl font-medium tracking-tight text-white mb-4">
+                            <p className="text-xs sm:text-sm text-zinc-400 font-medium mb-1">Average Views / Video</p>
+                            <p className="text-2xl sm:text-3xl font-medium tracking-tight text-white mb-3 sm:mb-4">
                                 {formatCompactNumber(kpis.avgViews)}
                             </p>
                             <div className="flex items-center gap-2 text-xs font-medium">
@@ -423,8 +423,8 @@ Data with Baraa,305000,15603940,404,"How to Connect Tableau to Database,Text, Ex
                             <ThumbsUp className="w-24 h-24 text-amber-500 -mr-6 -mt-6 rotate-12" />
                         </div>
                         <div className="relative z-10">
-                            <p className="text-sm text-zinc-400 font-medium mb-1">Total Engagements</p>
-                            <p className="text-3xl font-medium tracking-tight text-white mb-4">
+                            <p className="text-xs sm:text-sm text-zinc-400 font-medium mb-1">Total Engagements</p>
+                            <p className="text-2xl sm:text-3xl font-medium tracking-tight text-white mb-3 sm:mb-4">
                                 {formatCompactNumber(kpis.totalLikesAnalyzed)}
                             </p>
                             <div className="flex items-center gap-2 text-xs font-medium">
@@ -440,8 +440,8 @@ Data with Baraa,305000,15603940,404,"How to Connect Tableau to Database,Text, Ex
                             <MessageSquare className="w-24 h-24 text-violet-500 -mr-6 -mt-6 rotate-12" />
                         </div>
                         <div className="relative z-10">
-                            <p className="text-sm text-zinc-400 font-medium mb-1">Avg Engagement Rate</p>
-                            <p className="text-3xl font-medium tracking-tight text-white mb-4">
+                            <p className="text-xs sm:text-sm text-zinc-400 font-medium mb-1">Avg Engagement Rate</p>
+                            <p className="text-2xl sm:text-3xl font-medium tracking-tight text-white mb-3 sm:mb-4">
                                 {kpis.avgEngagementRate}%
                             </p>
                             <div className="flex items-center gap-2 text-xs font-medium">
@@ -578,7 +578,7 @@ Data with Baraa,305000,15603940,404,"How to Connect Tableau to Database,Text, Ex
                                 placeholder="Search videos..."
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
-                                className="w-full sm:w-64 bg-zinc-900 border border-zinc-800 rounded-full py-2 pl-10 pr-4 text-sm text-zinc-200 focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/50 transition-all placeholder:text-zinc-600"
+                                className="w-full sm:w-64 bg-zinc-900 border border-zinc-800 rounded-2xl py-2 pl-10 pr-4 text-sm text-zinc-200 focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/50 transition-all placeholder:text-zinc-600"
                             />
                         </div>
                     </div>
