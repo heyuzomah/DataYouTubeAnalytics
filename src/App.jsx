@@ -258,11 +258,15 @@ Data with Baraa,305000,15603940,404,"How to Connect Tableau to Database,Text, Ex
                     <div className="flex flex-col items-center text-center">
                         {/* Branded Logo/Icon Container */}
                         <div className="mb-10 relative">
-                            <div className="w-20 h-20 rounded-[2rem] bg-zinc-900 border border-zinc-800/50 flex items-center justify-center shadow-2xl rotate-3 transition-transform hover:rotate-0 duration-500">
-                                <Activity className="w-10 h-10 text-blue-500" />
+                            <div className="w-24 h-24 rounded-[2.5rem] bg-zinc-900 border border-zinc-800/50 overflow-hidden shadow-2xl transition-all duration-700 hover:scale-110 active:scale-95 group">
+                                <img
+                                    src="https://res.cloudinary.com/dtnqyl2zb/image/upload/v1772127419/channels4_profile_xmnvxf.jpg"
+                                    alt="Baraa"
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
-                            <div className="absolute -bottom-2 -right-2 w-8 h-8 rounded-full bg-zinc-950 border border-zinc-800 flex items-center justify-center shadow-lg">
-                                <Flame className="w-4 h-4 text-orange-500 animate-pulse" />
+                            <div className="absolute -bottom-1 -right-1 w-10 h-10 rounded-full bg-zinc-950 border border-zinc-800 flex items-center justify-center shadow-lg">
+                                <Activity className="w-5 h-5 text-blue-500 animate-pulse" />
                             </div>
                         </div>
 
