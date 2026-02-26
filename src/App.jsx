@@ -246,33 +246,73 @@ Data with Baraa,305000,15603940,404,"How to Connect Tableau to Database,Text, Ex
 
     // --- Render Functions ---
 
-    // 1. Loading / Error View (Replaces Upload View)
+    // 1. Premium Loading / Error View
     if (!data) {
         return (
-            <div className="min-h-screen bg-[#09090b] text-zinc-100 font-sans flex items-center justify-center p-6">
-                <div className="max-w-xl w-full text-center">
-                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-zinc-900 border border-zinc-800 shadow-xl mb-6">
-                        <Activity className="w-8 h-8 text-blue-500" />
-                    </div>
-                    <h1 className="text-3xl font-medium tracking-tight text-white mb-3">YouTube Analytics Hub</h1>
+            <div className="min-h-screen bg-[#09090b] text-zinc-100 font-sans flex items-center justify-center p-6 relative overflow-hidden">
+                {/* Visual Ambient Glows */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px] pointer-events-none animate-pulse"></div>
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-violet-500/5 rounded-full blur-[80px] pointer-events-none"></div>
 
-                    {isLoading ? (
-                        <div className="mt-12 flex flex-col items-center">
-                            <Loader2 className="w-10 h-10 text-blue-500 animate-spin mb-4" />
-                            <p className="text-zinc-400 font-medium">Syncing live data from Google Sheets...</p>
+                <div className="max-w-md w-full relative z-10">
+                    <div className="flex flex-col items-center text-center">
+                        {/* Branded Logo/Icon Container */}
+                        <div className="mb-10 relative">
+                            <div className="w-20 h-20 rounded-[2rem] bg-zinc-900 border border-zinc-800/50 flex items-center justify-center shadow-2xl rotate-3 transition-transform hover:rotate-0 duration-500">
+                                <Activity className="w-10 h-10 text-blue-500" />
+                            </div>
+                            <div className="absolute -bottom-2 -right-2 w-8 h-8 rounded-full bg-zinc-950 border border-zinc-800 flex items-center justify-center shadow-lg">
+                                <Flame className="w-4 h-4 text-orange-500 animate-pulse" />
+                            </div>
                         </div>
-                    ) : (
-                        <div className="mt-8 p-6 rounded-2xl bg-red-500/10 border border-red-500/20">
-                            <p className="text-red-400 font-medium mb-4">{error || "No data available."}</p>
-                            <button
-                                onClick={loadMockData}
-                                className="inline-flex items-center gap-2 px-4 py-2 bg-zinc-800 hover:bg-zinc-700 text-white rounded-xl transition-all font-medium text-sm border border-zinc-700"
-                            >
-                                <PlayCircle className="w-4 h-4" /> Load Demo Data
-                            </button>
-                        </div>
-                    )}
+
+                        <h1 className="text-2xl font-light tracking-[0.2em] uppercase text-white mb-2 ml-[0.2em]">
+                            Baraa Hub
+                        </h1>
+                        <p className="text-[11px] font-medium tracking-[0.3em] uppercase text-zinc-500 mb-12">
+                            Intelligence & Insights
+                        </p>
+
+                        {isLoading ? (
+                            <div className="space-y-6 w-full">
+                                <div className="h-[2px] w-full bg-zinc-900 rounded-full overflow-hidden relative">
+                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-500 to-transparent w-full animate-[progress_2s_ease-in-out_infinite]"></div>
+                                </div>
+                                <p className="text-xs font-medium text-zinc-400 animate-pulse tracking-wide">
+                                    Syncing live data from your story...
+                                </p>
+                            </div>
+                        ) : (
+                            <div className="w-full space-y-8">
+                                <div className="p-6 rounded-3xl bg-red-500/5 border border-red-500/10 backdrop-blur-sm">
+                                    <p className="text-sm text-red-400 font-medium leading-relaxed">
+                                        {error || "Connection to data stream interrupted."}
+                                    </p>
+                                </div>
+                                <button
+                                    onClick={loadMockData}
+                                    className="group flex items-center gap-3 px-8 py-4 bg-white text-black hover:bg-zinc-200 rounded-2xl transition-all duration-300 font-semibold text-sm shadow-xl hover:shadow-white/10 active:scale-95 mx-auto"
+                                >
+                                    <PlayCircle className="w-5 h-5" />
+                                    <span>Experience Demo</span>
+                                </button>
+                            </div>
+                        )}
+                    </div>
                 </div>
+
+                {/* Bottom Footer Credit */}
+                <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[10px] font-medium tracking-[0.2em] text-zinc-600 uppercase">
+                    &copy; 2026 Data with Baraa
+                </div>
+
+                <style dangerouslySetInnerHTML={{
+                    __html: `
+                    @keyframes progress {
+                        0% { transform: translateX(-100%); }
+                        100% { transform: translateX(100%); }
+                    }
+                `}} />
             </div>
         );
     }
